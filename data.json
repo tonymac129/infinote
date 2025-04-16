@@ -1,0 +1,69 @@
+{
+  "notes": [
+    {
+      "id": 0,
+      "title": "Vectors",
+      "content": [
+        {
+          "type": "section",
+          "title": "About Vectors",
+          "text": "Vectors are basically arrows that have a direction and a magnitude (size). In 2D, a vector is represented as \\(\\vec{v}=(\\Delta x,\\Delta y)\\). Vectors are different from scalars in that vectors have a direction, while scalars only have a magnitude. The magnitude of a vector is expressed as \\(||\\vec{v}||=\\sqrt{\\Delta x^2 + \\Delta y^2}\\), because the magnitude is basically the distance between the initial and final points of the vector thus the distance formula.",
+          "link": "ihNZlp7iUHE"
+        },
+        {
+          "type": "section",
+          "title": "Calculating Vectors",
+          "text": "To multiply a vector, you're applying a scalar to the vector. This is done by multiplying the scalar to each component of the vector. For example, if \\(\\vec{v}=(5,3)\\) and the scalar is 4, then \\(4\\vec{v}=(20,12)\\). To add/subtract vectors, you just add/subtract components of the second vector from the corresponding part of the first vector. For example, if \\(\\vec{v}=(5,3)\\) and \\(\\vec{u}=(2,1)\\), then \\(\\vec{v}+\\vec{u}=(5+2,3+1)=(7,4)\\). Think of it as applying the second vector after the first vector is drawn.",
+          "link": "JuTvjQgpUMQ"
+        },
+        {
+          "type": "section",
+          "title": "Direction of Vectors",
+          "text": "Any vector forms a right triangle, so if you use the inverse tangent function on the y component over the x component (opposite side over adjacent side), you get the angle measure. But because the inverse function always returns a measure from 90° to -90°, you have to add 180° to the answer if the final point of the vector is on the left of the coordinate plane (negative x component). For example, if \\(\\vec{v}=(-5,3)\\), then the angle is \\(\\tan^{-1}(-\\frac{3}{5})=\\tan^{-1}(-0.6)\\approx -31°\\). But because (-5, 3) is to the left of the y-axis, you add 180° to the answer, so the angle is 149°. The angle always starts at the x-axis and goes counterclockwise.",
+          "link": "A3OuFLHum6w"
+        },
+        {
+          "type": "section",
+          "title": "Calculating Components",
+          "text": "To reverse-engineer a vector from its magnitude and direction, you can use trigonometry. The cosine of the direction is essentially \\(\\frac{\\text{x component}}{\\text{hypotenuse (magnitude)}}\\), so if you multiply the cosine by the magnitude, you get the x component. Same goes for the y component, which is calculated by using the sine function. For example, if the magnitude is 10 and the direction is 30°, then the x component is \\(10\\cos(30°)\\approx 8.66\\) and the y component is \\(10\\sin(30°)\\approx 5\\). So the vector is approximately (8.66, 5).",
+          "link": "MkFbisCyjFc"
+        }
+      ],
+      "course": "Precalculus",
+      "type": "algebra",
+      "created": "4/13/2025",
+      "updated": "4/13/2025",
+      "thumb": "https://media.istockphoto.com/id/1136879467/vector/creative-vector-illustration-of-math-equation-mathematical-arithmetic-physics-formulas.jpg?s=612x612&w=0&k=20&c=zb25a-mr5RipT7KW1GrrKcTFU7y9ARhdGzCaLe2SmPc="
+    },
+    {
+      "id": 1,
+      "title": "Matrices",
+      "content": [
+        {
+          "type": "section",
+          "title": "About Matrices",
+          "text": "Matrices are tables of numbers with rows and columns. They can be used to represent data, systems of equations, transformations, and more. For example, \\(\\begin{bmatrix}1 & 2 & 3 \\\\ 4 & 5 & 6\\end{bmatrix}\\) is a 2x3 matrix and it has 2 rows and 3 columns."
+        },
+        {
+          "type": "section",
+          "title": "Calculating Matrices",
+          "text": "To add/subtract 2 matrices, you simply add/subtract the corresponding numbers of the matrices. For example, if \\(A=\\begin{bmatrix}1 & 2 \\\\ 3 & 4\\end{bmatrix}\\) and \\(B=\\begin{bmatrix}5 & 6 \\\\ 7 & 8\\end{bmatrix}\\), then \\(A+B=\\begin{bmatrix}1+5 & 2+6 \\\\ 3+7 & 4+8\\end{bmatrix}=\\begin{bmatrix}6 & 8 \\\\ 10 & 12\\end{bmatrix}\\). To multiply a matrix by a scalar, you multiply each element of the matrix by the scalar. For example, if \\(A=\\begin{bmatrix}1 & 2 \\\\ 3 & 4\\end{bmatrix}\\) and the scalar is 2, then \\(2A=\\begin{bmatrix}2*1 & 2*2 \\\\ 2*3 & 2*4\\end{bmatrix}=\\begin{bmatrix}2 & 4 \\\\ 6 & 8\\end{bmatrix}\\). You can only add/subtract matrices with the same dimensions, so a 2x3 matrix can only be added to a 2x3 matrix and can't be added to a 2x2 matrix."
+        },
+        {
+          "type": "section",
+          "title": "Using Matrices for Transformations",
+          "hard": true,
+          "text": "Matrices can also be used to represent vectors. For example, if a vector starts from the origin and points to (3, -2), then the vector can be represented as \\(\\begin{bmatrix}3 \\\\ -2\\end{bmatrix}\\). The top number represents the x component of the vector while the bottom number represents the y component. When using a matrix for a transformation, you're basically defining how to \"stretch\" the original unit square. For example, if the unit square is 1x1 at the beginning, applying the matrix \\(\\begin{bmatrix}2 & 1 \\\\ 1 & 2   \\end{bmatrix}\\) would change the x component of the square (originally 1) to \\(\\begin{bmatrix}2 \\\\ 1 \\end{bmatrix}\\), a vector itself. Meanwhile, the second column of the matrix changes the y component of the square (originally 1) to \\(\\begin{bmatrix}1 \\\\ 2 \\end{bmatrix}\\). Doing this turns the originally straight square into a parallelogram with slanted sides (because of the new vectors we created). For example, if we have to transform the point (2, 1) using this matrix, we would have to multiply the x transformation vector (\\(\\begin{bmatrix}2 \\\\ 1 \\end{bmatrix}\\)) by the scalar 2 because the point's x value is 2. The x of the point has now been transformed from 2 to a vector \\(\\begin{bmatrix} 4 \\\\ 2 \\end{bmatrix}\\). Similarly, if we multiply the y transformation vector (\\(\\begin{bmatrix}1 \\\\ 2 \\end{bmatrix}\\)) by the scalar 1, we transform the y value from 1 to the vector \\(\\begin{bmatrix}1 \\\\ 2 \\end{bmatrix}\\). To combine the x and the y transformed vectors, we have to add them together. Think of it like this: the x transformation vector is the bottom side of the stretched unit square, while the y transformation vector is the right side of it, so the y vector is starting from the final point of the x vector, thus we have to add them together. \\(\\begin{bmatrix} 4 \\\\ 2 \\end{bmatrix}+\\begin{bmatrix}1 \\\\ 2 \\end{bmatrix}=\\begin{bmatrix}5 \\\\ 4 \\end{bmatrix}\\). And because the vector starts at the origin, we can convert this final matrix vector to the point (5, 4)",
+          "link": "PtjdhADnJi4",
+          "tool": "https://www.geogebra.org/m/P2nptPzP"
+        }
+      ],
+      "course": "Precalculus",
+      "type": "algebra",
+      "created": "4/14/2025",
+      "updated": "4/14/2025",
+      "thumb": "https://miro.medium.com/v2/resize:fit:560/1*ZjTGr4J8Xz-mfRbWWM9xxg.png"
+    }
+  ],
+  "topics": ["precalculus"]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | InfiNote</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="browse">
+        <div class="search-wrap">
+          <input type="text" placeholder="Search any topic" autocomplete="off" class="search" id="search" />
+          <div id="search-container" class="search-container hide"></div>
+        </div>
+        <img src="icons/toggle.svg" id="toggle" class="nav-icon" title="Toggle light mode" />
+        <img src="icons/reset.svg" id="reset" class="nav-icon" title="Reset data" />
+      </div>
+      <a href="/" class="logo">
+        <img src="logo.png" id="logo-img" />
+      </a>
+      <div class="nav-links">
+        <div class="topics">
+          <div class="topics-label" id="topics-label"><img src="icons/caret.svg" class="caret" id="caret" /> Topics</div>
+          <div class="topics-dropdown" id="topics-dropdown"></div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="https://github.com/tonymac129" target="_blank" class="nav-link">GitHub</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1 class="hero-title">Welcome back, Tony!</h1>
+      <p class="hero-subtitle">What topic do you want to review/refresh today?</p>
+    </div>
+    <div class="groups">
+      <div class="sections">
+        <div class="section" id="review-section">
+          <h2 class="section-title">Marked as Review</h2>
+        </div>
+        <div class="section" id="favorite-section">
+          <h2 class="section-title">Favorited Notes</h2>
+        </div>
+        <div class="section" id="recent-section">
+          <h2 class="section-title">Recently Viewed</h2>
+        </div>
+      </div>
+      <div class="sections">
+        <div class="section" id="precalc-section">
+          <h2 class="section-title">Precalculus Notes</h2>
+        </div>
+        <div class="section" id="geometry-section">
+          <h2 class="section-title">Geometry Notes</h2>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

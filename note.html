@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="browse">
+        <div class="search-wrap">
+          <input type="text" placeholder="Search any topic" autocomplete="off" class="search" id="search" />
+          <div id="search-container" class="search-container hide"></div>
+        </div>
+        <img src="icons/toggle.svg" id="toggle" class="nav-icon" title="Toggle light mode" />
+        <img src="icons/reset.svg" id="reset" class="nav-icon" title="Reset data" />
+      </div>
+      <a href="/" class="logo">
+        <img src="logo.png" id="logo-img" />
+      </a>
+      <div class="nav-links">
+        <div class="topics">
+          <div class="topics-label" id="topics-label"><img src="icons/caret.svg" class="caret" id="caret" /> Topics</div>
+          <div class="topics-dropdown" id="topics-dropdown"></div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="https://github.com/tonymac129" target="_blank" class="nav-link">GitHub</a>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="sidebar" id="sidebar">
+        <h2 class="sidebar-title" id="sidebar-title"></h2>
+      </div>
+      <div class="content" id="content">Fetching the note...</div>
+    </div>
+    <script src="note.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

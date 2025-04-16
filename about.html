@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | InfiNote</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="browse">
+        <div class="search-wrap">
+          <input type="text" placeholder="Search any topic" autocomplete="off" class="search" id="search" />
+          <div id="search-container" class="search-container hide"></div>
+        </div>
+        <img src="icons/toggle.svg" id="toggle" class="nav-icon" title="Toggle light mode" />
+        <img src="icons/reset.svg" id="reset" class="nav-icon" title="Reset data" />
+      </div>
+      <a href="/" class="logo">
+        <img src="logo.png" id="logo-img" />
+      </a>
+      <div class="nav-links">
+        <div class="topics">
+          <div class="topics-label" id="topics-label"><img src="icons/caret.svg" class="caret" id="caret" /> Topics</div>
+          <div class="topics-dropdown" id="topics-dropdown"></div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="https://github.com/tonymac129" target="_blank" class="nav-link">GitHub</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1 class="hero-title">About InfiNote</h1>
+      <p class="hero-subtitle">A simple and fast way to learn and review any topic.</p>
+    </div>
+    <p class="paragraph">
+      It fascinates me how things just <i>work</i> in our universe and how we explain it using math. I've been learning math ahead
+      of my grade for almost 2 years now using the fantastic platform
+      <a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> and it's a huge reason why I perform so well at
+      school. Recently, as I started learning more advanced stuff like calculus or trigonometry I find it hard to remember and
+      keep track of all the concepts, methods, and theorems you can use to solve certain problems in addition to building and
+      remembering the intuition for how these concepts work. There's just too much to remember and I often find myself looking up
+      the same thing over and over again. So I thought, why not create a simple web notebook that allows me to keep track of all
+      the things I've learned? This can definitely improve my math skills while also being a fun little coding exercise that's
+      actually useful too. And that's how InfiNote was born.
+    </p>
+    <p class="paragraph">
+      This site is used to host many notes that I've made on a wide variety of math topics primarily used for my own review. But
+      if you somehow stumbled upon this website (extremely unlikely) feel free to check out some of the notes and learn a thing or
+      two yourself! There's also a bunch of features like "Mark as Review", "Add to Favorites", "Recent Notes", helpful videos or
+      tools related to the topic, and convenient navigation with search functionality. And of course there's a toggle for dark and
+      light mode with a button next to it that resets all your data. Also, all the notes and topic pages on this site are fully
+      dynamic and are rendered from JSON data containing all the notes for scalability, optimization, and ease of use. This is
+      also my first time using the JavaScript library MathJax as well as the language LaTeX (writing LaTeX in JSON is a pain) to
+      display all the fancy smarty math equations and symbols. If you enjoy this site, please check out my
+      <a href="https://github.com/tonymac129" target="_blank">GitHub</a> or
+      <a href="https://tonymac129.github.io" target="_blank">portfolio</a> to see my other work!
+    </p>
+    <script src="index.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>
