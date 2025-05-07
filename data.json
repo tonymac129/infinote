@@ -82,7 +82,25 @@
       "created": "4/14/2025",
       "updated": "4/14/2025",
       "thumb": "https://miro.medium.com/v2/resize:fit:560/1*ZjTGr4J8Xz-mfRbWWM9xxg.png"
+    },
+    {
+      "id": 2,
+      "title": "Derivatives",
+      "content": [
+        {
+          "type": "section",
+          "title": "Power Rule",
+          "text": "The power rule helps with taking the derivative of a function with exponents. The derivative of a function \\(f(x)=x^n\\) is \\(f'(x)=nx^{n-1}\\) when applying the power rule. For example, if \\(f(x)=\\frac{1}{x^9}\\), then \\(f'(x)=-9x^{-10}\\). The power rule can be used to find the slope of a function at a certain point by plugging in the x value into the derivative function. If the function of the derivative has a constant/scalar before it, like \\(\\frac{d}{dx}=[Af(x)]\\), you can take the derivative of the function, then multiply the result by the scalar, like \\(\\frac{d}{dx}=[Af(x)]=A\\frac{d}{dx}[f(x)]\\). For example, if \\(f(x)=x^3\\), then \\(\\frac{d}{dx}[2f(x)]=2\\frac{d}{dx}[x^3]=2*3x^2=6x^2\\). This makes sense because if you're multiplying a function by a scalar, you're multiplying the slope (essentially the derivative) by that scalar. To get the derivative of a function plus another function, like \\(\\frac{d}{dx}[f(x)+g(x)]\\), you can take the derivatives of the functions and add them together, like \\(f'(x)+g'(x)\\). For example, if \\(f(x)=x^3\\) and \\(g(x)=x^2\\), then \\(\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}[x^3+x^2]=3x^2+2x\\). This property can be used to calculate the derivative of a function with multiple terms, each with a different exponent. For example, the function \\(x^3+x^2+x\\) can be broken down into \\(f(x)=x^3\\), \\(g(x)=x^2\\), and \\(h(x)=x\\), then \\(f'(x)+g'(x)+h'(x)\\), and finally get the derivative \\(3x^2+2x+1\\).",
+          "link": "mzOBlH32qdk",
+          "tool": "https://www.derivative-calculator.net/"
+        }
+      ],
+      "course": "Calculus",
+      "type": "derivatives",
+      "created": "5/6/2025",
+      "updated": "5/6/2025",
+      "thumb": "https://www.3blue1brown.com/content/lessons/2018/derivatives-and-transforms/intro_1.png"
     }
   ],
-  "topics": ["precalculus"]
+  "topics": ["precalculus","calculus"]
 }

@@ -18,6 +18,9 @@ fetch("data.json")
       case "precalculus":
         heroSub.innerText = "Precalculus is an advanced math course with many topics focusing on prepping for calculus.";
         break;
+      case "calculus":
+        heroSub.innerText = "Calculus is a branch of mathematics that studies continuous change, through derivatives and integrals.";
+        break;
       default:
         heroSub.innerText = "Explore various topics and enhance your knowledge with InfiNote.";
     }

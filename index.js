@@ -1,6 +1,7 @@
 const reviewSection = document.getElementById("review-section");
 const favoriteSection = document.getElementById("favorite-section");
 const recentSection = document.getElementById("recent-section");
+const calcSection = document.getElementById("calc-section");
 const precalcSection = document.getElementById("precalc-section");
 const geometrySection = document.getElementById("geometry-section");
 
@@ -20,6 +21,9 @@ fetch("data.json")
       }
       if (reviewNotes.includes(note.id)) {
         reviewSection.appendChild(renderItem(note));
+      }
+      if (note.course === "Calculus") {
+        calcSection.appendChild(renderItem(note));
       }
       if (note.course === "Precalculus") {
         precalcSection.appendChild(renderItem(note));
@@ -41,6 +45,9 @@ fetch("data.json")
     }
     if (recentSection.children.length === 1) {
       recentSection.innerHTML += "<p>You haven't read anything recently...</p>";
+    }
+    if (calcSection.children.length === 1) {
+      calcSection.innerHTML += "<p>Get back to work and add more notes!</p>";
     }
     if (precalcSection.children.length === 1) {
       precalcSection.innerHTML += "<p>Get back to work and add more notes!</p>";
