@@ -51,15 +51,15 @@ function renderNote(note) {
   content.appendChild(controls);
   const reviewBtn = document.createElement("img");
   reviewBtn.className = "article-icon";
-  reviewBtn.src = reviewNotes.includes(noteID) ? "/icons/needs-review.svg" : "/icons/review.svg";
+  reviewBtn.src = reviewNotes.includes(noteID) ? "./icons/needs-review.svg" : "./icons/review.svg";
   if (reviewNotes.includes(noteID)) reviewBtn.style.filter = "invert(0)";
   reviewBtn.onclick = () => {
     if (!reviewBtn.src.includes("needs-review")) {
-      reviewBtn.src = "/icons/needs-review.svg";
+      reviewBtn.src = "./icons/needs-review.svg";
       reviewBtn.style.filter = "invert(0)";
       reviewNotes.push(noteID);
     } else {
-      reviewBtn.src = "/icons/review.svg";
+      reviewBtn.src = "./icons/review.svg";
       reviewNotes.splice(reviewNotes.indexOf(noteID), 1);
       if (localStorage.getItem("mode") === "light") reviewBtn.style.filter = "var(--invert)";
     }
@@ -67,15 +67,15 @@ function renderNote(note) {
   };
   const starBtn = document.createElement("img");
   starBtn.className = "article-icon";
-  starBtn.src = favoritedNotes.includes(noteID) ? "/icons/favorited.svg" : "/icons/favorite.svg";
+  starBtn.src = favoritedNotes.includes(noteID) ? "./icons/favorited.svg" : "./icons/favorite.svg";
   if (favoritedNotes.includes(noteID)) starBtn.style.filter = "invert(0)";
   starBtn.onclick = () => {
     if (!starBtn.src.includes("favorited")) {
-      starBtn.src = "/icons/favorited.svg";
+      starBtn.src = "./icons/favorited.svg";
       starBtn.style.filter = "invert(0)";
       favoritedNotes.push(noteID);
     } else {
-      starBtn.src = "/icons/favorite.svg";
+      starBtn.src = "./icons/favorite.svg";
       favoritedNotes.splice(favoritedNotes.indexOf(noteID), 1);
       if (localStorage.getItem("mode") === "light") starBtn.style.filter = "var(--invert)";
     }
@@ -144,7 +144,7 @@ function renderSections(note) {
       link.className = "article-link";
       link.target = "_blank";
       link.href = "https://youtube.com/watch?v=" + section.link;
-      link.innerHTML = "<img src='/icons/link.svg'/>";
+      link.innerHTML = "<img src='./icons/link.svg'/>";
       sectionContent.appendChild(link);
     }
     if (section.tool) {
@@ -152,7 +152,7 @@ function renderSections(note) {
       link.className = "article-link";
       link.target = "_blank";
       link.href = section.tool;
-      link.innerHTML = "<img src='/icons/tool.svg'/>";
+      link.innerHTML = "<img src='./icons/tool.svg'/>";
       sectionContent.appendChild(link);
     }
     sectionDiv.appendChild(sectionTitle);
