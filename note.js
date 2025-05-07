@@ -108,7 +108,7 @@ function renderButtons(data, note) {
     if (prevNote) {
       window.location.href = `note.html?id=${prevNote.id}`;
     } else {
-      window.location.href = "/";
+      window.location.href = "./";
     }
   };
   const nextBtn = document.createElement("button");
@@ -119,7 +119,7 @@ function renderButtons(data, note) {
     if (nextNote) {
       window.location.href = `note.html?id=${nextNote.id}`;
     } else {
-      window.location.href = "/";
+      window.location.href = "./";
     }
   };
   controls.appendChild(prevBtn);
