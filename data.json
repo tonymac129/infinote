@@ -89,18 +89,37 @@
       "content": [
         {
           "type": "section",
+          "title": "About Derivatives",
+          "text": "Derivatives are functions that describe a function's instantaneous slope at a point. If the function is curved, we can't get its slope because it's constantly changing from point to point, but using derivatives, we can calculate the slope of the function at one exact point. The slope is calculated as change in y over change in x, so if you take the limit of the slope of an iniftely small section on the function, like \\(\\lim_{h \\to 0}\\frac{f(x+h)-f(x)}{h}\\). Think of h as the distance to a point next to the point x that we want to get the derivative of, so the value of the function at point x+h, \\(f(x+h)\\), minus the value of the function at x gets us the change in y, while the change in x is just h. So by calculating the slope in this infinitely small section, we get the derivative of point x.",
+          "link": "ANyVpMS3HL4",
+          "tool": "https://www.derivative-calculator.net/"
+        },
+        {
+          "type": "section",
           "title": "Power Rule",
           "text": "The power rule helps with taking the derivative of a function with exponents. The derivative of a function \\(f(x)=x^n\\) is \\(f'(x)=nx^{n-1}\\) when applying the power rule. For example, if \\(f(x)=\\frac{1}{x^9}\\), then \\(f'(x)=-9x^{-10}\\). The power rule can be used to find the slope of a function at a certain point by plugging in the x value into the derivative function. If the function of the derivative has a constant/scalar before it, like \\(\\frac{d}{dx}=[Af(x)]\\), you can take the derivative of the function, then multiply the result by the scalar, like \\(\\frac{d}{dx}=[Af(x)]=A\\frac{d}{dx}[f(x)]\\). For example, if \\(f(x)=x^3\\), then \\(\\frac{d}{dx}[2f(x)]=2\\frac{d}{dx}[x^3]=2*3x^2=6x^2\\). This makes sense because if you're multiplying a function by a scalar, you're multiplying the slope (essentially the derivative) by that scalar. To get the derivative of a function plus another function, like \\(\\frac{d}{dx}[f(x)+g(x)]\\), you can take the derivatives of the functions and add them together, like \\(f'(x)+g'(x)\\). For example, if \\(f(x)=x^3\\) and \\(g(x)=x^2\\), then \\(\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}[x^3+x^2]=3x^2+2x\\). This property can be used to calculate the derivative of a function with multiple terms, each with a different exponent. For example, the function \\(x^3+x^2+x\\) can be broken down into \\(f(x)=x^3\\), \\(g(x)=x^2\\), and \\(h(x)=x\\), then \\(f'(x)+g'(x)+h'(x)\\), and finally get the derivative \\(3x^2+2x+1\\).",
           "link": "mzOBlH32qdk",
           "tool": "https://www.derivative-calculator.net/"
+        },
+        {
+          "type": "section",
+          "title": "Product & Quotient Rules",
+          "text": "To get the derivative of the product of 2 functions, you can use the product rule, which states that \\(\\frac{d}{dx}[f(x)g(x)]=f'(x)g(x)+f(x)g'(x)\\). For example, if \\(f(x)=2x^3\\) and \\(g(x)=3x^2\\), the derivative of the product of these functions is \\(6x^2*3x^2+2x^3*6x\\), which is \\(30x^4\\). The quotient rule tells you the derivative of the quotient of two functions, and is pretty similar to the product rule. \\(\\frac{d}{dx}[\\frac{f(x)}{g(x)}]=\\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}\\). For example, if \\(f(x)=2x^3\\) and \\(g(x)=3x^2\\), the derivative of the product of these functions is \\(\\frac{6x^2*3x^2-2x^3*6x}{9x^4}\\), which simplifies to \\(\\frac{2}{3}\\). This means the graph of \\(\\frac{f(x)}{g(x)}\\) in this case is a straight line because its derivative is \\(\\frac{2}{3}\\), a constant.",
+          "link": "WqzY3xibFL8"
+        },
+        {
+          "type": "section",
+          "title": "Special Derivatives",
+          "text": "The derivative of a sine function is the cosine function, so \\(\\frac{d}{dx}[\\sin(x)]=\\cos(x)\\). The derivative of a cosine function is the negative of the sine function, so \\(\\frac{d}{dx}[\\cos(x)]=-\\sin(x)\\). Now to one of the most amazing things in math: the derivative of \\(e^x\\) is literally just \\(e^x\\), so whatever the value at the point of the \\(e^x\\) function is, that's the slope of that point. Inversely, the derivative of \\(ln(x)=\\frac{1}{x}\\) because the natural log is the inverse of the exponential e function.",
+          "link": "Qm1TDobNrns"
         }
       ],
       "course": "Calculus",
       "type": "derivatives",
       "created": "5/6/2025",
-      "updated": "5/6/2025",
+      "updated": "5/13/2025",
       "thumb": "https://www.3blue1brown.com/content/lessons/2018/derivatives-and-transforms/intro_1.png"
     }
   ],
-  "topics": ["precalculus","calculus"]
+  "topics": ["precalculus", "calculus"]
 }
