@@ -71,7 +71,7 @@ function Nav({ topics }) {
           <motion.img
             whileHover={{ scale: 1.2, rotate: 15, y: -2 }}
             whileTap={{ scale: 1, rotate: -5, y: 0 }}
-            src="/icons/toggle.svg"
+            src="/infinote/icons/toggle.svg"
             onClick={() => setMode(!mode)}
             className="nav-icon"
             title="Toggle light mode"
@@ -79,7 +79,7 @@ function Nav({ topics }) {
           <motion.img
             whileHover={{ scale: 1.2, rotate: 15, y: -2 }}
             whileTap={{ scale: 1, rotate: -5, y: 0 }}
-            src="/icons/reset.svg"
+            src="/infinote/icons/reset.svg"
             onClick={() => {
               if (confirm("Are you sure you want to clear all your data on InfiNote? This action cannot be undone.")) {
                 localStorage.clear();
@@ -91,12 +91,12 @@ function Nav({ topics }) {
           />
         </div>
         <Link to="/" className="logo">
-          <img src={mode ? "/light-logo.png" : "/logo.png"} />
+          <img src={mode ? "/infinote/light-logo.png" : "/infinote/logo.png"} />
         </Link>
         <div className="nav-links">
           <div className="topics" ref={topicsRef}>
             <div className="topics-label" onClick={() => setTopicsOpen(!topicsOpen)}>
-              <img src="/icons/caret.svg" className="caret" style={{ transform: `rotate(${topicsOpen ? 90 : 0}deg)` }} /> Topics
+              <img src="/infinote/icons/caret.svg" className="caret" style={{ transform: `rotate(${topicsOpen ? 90 : 0}deg)` }} /> Topics
             </div>
             <AnimatePresence>
               {topicsOpen && (

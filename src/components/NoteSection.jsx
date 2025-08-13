@@ -25,7 +25,7 @@ function NoteSection({ value, noteSections, setNoteSections, index, setEditing }
       <ReactQuill theme="snow" value={content} onChange={setContent} modules={modules} />
       <div className="section-btns">
         <img
-          src="/icons/delete.svg"
+          src="/infinote/icons/delete.svg"
           title="Delete note section"
           onClick={() => {
             setNoteSections(noteSections.filter((section) => section !== value));

@@ -112,7 +112,7 @@ function Note({ favorites, setFavorites, reviews, setReviews, recents, setRecent
                     <motion.img
                       whileHover={{ scale: 1.2, rotate: 5, y: -2 }}
                       whileTap={{ scale: 1, rotate: -5, y: 0 }}
-                      src="/icons/edit.svg"
+                      src="/infinote/icons/edit.svg"
                       className="note-icon"
                       title="Edit note"
                       onClick={() => setEditing(true)}
@@ -120,7 +120,7 @@ function Note({ favorites, setFavorites, reviews, setReviews, recents, setRecent
                     <motion.img
                       whileHover={{ scale: 1.2, rotate: 5, y: -2 }}
                       whileTap={{ scale: 1, rotate: -5, y: 0 }}
-                      src={reviewed ? "/icons/needs-review.svg" : "/icons/review.svg"}
+                      src={reviewed ? "/infinote/icons/needs-review.svg" : "/infinote/icons/review.svg"}
                       className="note-icon"
                       title="Mark as needs review"
                       onClick={() => setReviewed(!reviewed)}
@@ -128,7 +128,7 @@ function Note({ favorites, setFavorites, reviews, setReviews, recents, setRecent
                     <motion.img
                       whileHover={{ scale: 1.2, rotate: 5, y: -2 }}
                       whileTap={{ scale: 1, rotate: -5, y: 0 }}
-                      src={favorited ? "/icons/favorited.svg" : "/icons/favorite.svg"}
+                      src={favorited ? "/infinote/icons/favorited.svg" : "/infinote/icons/favorite.svg"}
                       className="note-icon"
                       title="Add to favorites"
                       onClick={() => setFavorited(!favorited)}
