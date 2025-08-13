@@ -1,0 +1,278 @@
+.note-container {
+  display: flex;
+  padding-left: calc(50vw - 550px);
+  height: calc(100vh - 70px);
+}
+
+.note-sidebar {
+  flex: 1;
+  border-right: 2px solid var(--primary-border);
+  padding-right: 30px;
+  overflow: auto;
+}
+
+.note-links {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  color: var(--primary-text);
+  font-size: 25px;
+  text-align: center;
+  padding-block: 30px;
+}
+
+.sidebar-link {
+  color: var(--secondary-text);
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+.sidebar-link:hover {
+  background-color: var(--secondary-bg);
+}
+
+.note-content {
+  flex: 4;
+  overflow: auto;
+  padding-left: 100px;
+  padding-right: calc(50vw - 550px);
+}
+
+.note-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-block: 30px;
+}
+
+.note-name {
+  color: var(--primary-text);
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.note-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.note-date {
+  color: var(--secondary-text);
+  font-size: 16px;
+}
+
+.note-update {
+  color: var(--tertiary-text);
+  font-size: 13px;
+}
+
+.note-hr {
+  width: 100%;
+  height: 5px;
+  background-color: var(--secondary-text);
+  border-radius: 10px;
+  border: none;
+}
+
+.note-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.note-icon {
+  width: 23px;
+  cursor: pointer;
+  filter: var(--invert);
+}
+
+.note-icon:first-child {
+  width: 27px;
+}
+
+.note-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.note-section-title {
+  color: var(--primary-text);
+  margin-bottom: 30px;
+}
+
+.note-paragraph,
+.note-section-input {
+  color: var(--secondary-text);
+  line-height: 26px;
+  font-size: 18px;
+  overflow: auto;
+}
+
+.ql-size-small {
+  font-size: 12px;
+}
+
+.ql-size-large {
+  font-size: 25px;
+}
+
+.ql-size-huge {
+  font-size: 40px;
+}
+
+.add-section {
+  border: 2px solid var(--primary-border);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.note-section-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.note-section {
+  position: relative;
+}
+
+.section-btns {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.section-btns img {
+  width: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: var(--invert);
+}
+
+.section-btns img:hover {
+  transform: scale(1.2);
+}
+
+.note-tools {
+  width: 100%;
+  border: 2px solid var(--primary-border);
+  border-radius: 5px;
+  display: flex;
+  padding: 5px 10px;
+  gap: 15px;
+  position: relative;
+}
+
+.note-tool {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--secondary-text);
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.note-tool:hover {
+  background-color: var(--secondary-bg);
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+.highlight-panel {
+  background-color: var(--primary-bg);
+  border: 2px solid var(--primary-border);
+  border-radius: 5px;
+  position: absolute;
+  left:50%;
+  top: 45px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.highlight-panel button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  padding-block: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.indicator {
+  height: 20px;
+  border-radius: 5px;
+}
+
+.highlight-panel button:hover {
+  background-color: var(--primary-hover);
+}
+
+.ql-formats button, .ql-color, .ql-align, .ql-header, .ql-size {
+  filter: var(--opposite);
+}
+
+.ql-picker-options {  
+  box-shadow: none !important;
+  border-radius: 0px 0px 10px 10px;
+  border: none !important;
+}
+
+.ql-picker {
+  z-index: 1000 !important;
+}
+
+.ql-editor {
+  color: var(--secondary-text);
+}
+
+.ql-align-center {
+  text-align: center;
+}
+
+.ql-align-right {
+  text-align: right;
+}
+
+.ql-picker-options {
+  filter: var(--opposite);
+}
+
+.ql-toolbar {
+  border-radius: 10px 10px 0px 0px;
+  border: 2px solid var(--primary-border) !important;
+}
+
+.ql-container {
+  border-radius: 0px 0px 10px 10px;
+  padding-block: 5px;
+  border: 2px solid var(--primary-border) !important;
+  border-top: none !important;
+}

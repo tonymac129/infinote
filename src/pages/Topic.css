@@ -1,0 +1,50 @@
+.topic-notes {
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid var(--primary-border);
+  margin-inline: calc(50vw - 550px);
+  margin-bottom: 50px;
+}
+
+.topic-browse {
+  margin-inline: calc(50vw - 300px);
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.topic-search {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid var(--primary-border);
+  border-radius: 5px;
+  color: var(--primary-text);
+  font-size: 18px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.topic-note {
+  color: var(--primary-text);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  gap: 20px;
+}
+
+.topic-note:hover {
+  background-color: var(--secondary-bg);
+}
+
+.topic-note span {
+  flex: 0.5;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+
+.note-btns {
+  display: flex;
+  justify-content: space-between;
+}
